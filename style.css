@@ -54,10 +54,12 @@ li{
 .clear-floated	  { clear: both; height: 100%; font-size: 1px; line-height: 1px; padding: 0; margin: 0; }
 .Contact{
     border: 2px solid #000;
-    width: 150px;
-    height: 75px;
+    width: 450px;
+    height: 65px;
     margin: 0px auto;
     background-color: #051;
     color: #fff;
     z-index: +15;
 }
+span {line-height: 20px; font-size: 14px; display: block; height: 20px;}
+span:hover {font-size: 20px;}
