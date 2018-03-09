@@ -71,6 +71,7 @@ th,td{
     color:#BD4F95;
     padding: 15px;
     margin: 0 auto;
+    font-size: 20px;
 }
 tr:hover { background: yellow; }
 span {line-height: 20px; font-size: 14px; display: block; height: 20px;}
