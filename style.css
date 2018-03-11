@@ -79,12 +79,18 @@ span:hover {font-size: 20px;}
 
 #logo{
     display: block;
+    /* margin-left: auto;
+    margin-right: auto; */
+    width: 85%;
+}
+#sidelogo{
+    display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
 }
 #link_list{
-    position: relative;
+    position: center;
 }
 canvas {
     padding-left: 0;

@@ -1,5 +1,5 @@
-var fourBig;
-$(document).ready(function(){
+// var fourBig;
+// $(document).ready(function(){
     
   
-});
+// });
