@@ -82,7 +82,7 @@ ctx.font = "10px Arial";
         function fillJan(){
             ctx.beginPath();
             for(var i = 275;i>200;i--){
-                for(var j = 51;j<81;j++){
+                for(var j = 50;j<81;j++){
                     ctx.lineTo(j,i);
                     
                 }
@@ -92,7 +92,7 @@ ctx.font = "10px Arial";
         function fillFeb(){
             ctx.beginPath();
             for(var i = 275;i>180;i--){
-                for(var j = 111;j<141;j++){
+                for(var j = 110;j<141;j++){
                     ctx.lineTo(j,i);
                     
                 }
@@ -102,7 +102,7 @@ ctx.font = "10px Arial";
         function fillMar(){
             ctx.beginPath();
             for(var i = 275;i>150;i--){
-                for(var j = 171;j<201;j++){
+                for(var j = 170;j<201;j++){
                     ctx.lineTo(j,i);
                     
                 }
@@ -112,7 +112,7 @@ ctx.font = "10px Arial";
         function fillApr(){
             ctx.beginPath();
             for(var i = 275;i>90;i--){
-                for(var j = 231;j<261;j++){
+                for(var j = 230;j<261;j++){
                     ctx.lineTo(j,i);
                     
                 }
@@ -122,7 +122,7 @@ ctx.font = "10px Arial";
         function fillMay(){
             ctx.beginPath();
             for(var i = 275;i>10;i--){
-                for(var j = 291;j<321;j++){
+                for(var j = 290;j<321;j++){
                     ctx.lineTo(j,i);
                     
                 }
