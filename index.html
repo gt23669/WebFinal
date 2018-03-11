@@ -26,46 +26,78 @@
                                 </a>
                               </ul>
                 
-                </div>
-                </div>
-                <div class="float-right-area">
-                        <div class="inner-right">
-                        <p id="Welcome">
-                        Welcome to <i>Umbrella Corp</i>! 
-                        </p>
-                        <p id="reality">
-                          Just yanking your chain there we're actually an LLC called <b>ZomVax</b>
-                        </p>
-                        <div class="slideshow">
-                          <div class="slideFade">
-                            <div class="numberText">1/3</div>
-                            <img src="raccooncity1.jpg">
+                            </div>
                           </div>
-                          <div class="slideFade">
-                            <div class="numberText">2/3</div>
-                            <img src="raccooncity2.jpg">
+                          <div class="float-right-area">
+                            <div class="inner-right">
+                              <p id="Welcome">
+                                Welcome to <i>Umbrella Corp</i>! 
+                              </p>
+                              <p id="reality">
+                                Just yanking your chain there we're actually an LLC called <b>ZomVax</b>
+                              </p>
+                              <img src="./Pictures/LogoComplete(3).png" id="logo">
+                        <div class="slideshow-container">
+                          <div class="mySlides fade">
+                            <!-- Put Images Here!-->
+                            <img src="raccooncity1.jpg" style="width:100%">
                           </div>
-                          <div class="slideFade">
-                            <div class="numberText">3/3</div>
-                            <img src="raccooncity3.jpg">
+                        
+                          <div class="mySlides fade">
+                            <!-- Put Images Here!-->
+                            <img src="raccooncity2.jpg" style="width:100%">
                           </div>
-                          <a class="prev" onclick="plusSlides(-1)">&#10094</a>
-                          <a class="nect" onclick="plusSlides(1)">&#10095</a>
+                        
+                          <div class="mySlides fade">
+                            <!-- Put Images Here!-->
+                            <img src="raccooncity3.jpg" style="width:100%">
+                          </div>
+                        
+                          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                          <a class="next" onclick="plusSlides(1)">&#10095;</a>
                         </div>
+                        <br>
+                        
                         <div style="text-align:center">
-                          <span class="dot" onclick="currentSlide(1)"></span>
-                          <span class="dot" onclick="currentSlide(2)"></span>
-                          <span class="dot" onclick="currentSlide(3)"></span>
+                        <div onload="currentSlide(1)"></div>
+                          <span class="dot" onclick="currentSlide(1)"></span> 
+                          <span class="dot" onclick="currentSlide(2)"></span> 
+                          <span class="dot" onclick="currentSlide(3)"></span> 
                         </div>
-                        <div>
-                                <img src="./Pictures/LogoComplete(3).png" id="logo">
                               </div>
                         </div>
                         </div>
                         
                         <div class="clear-floated"></div>
         
+<script>
+  var slideIndex = 1;
+    showSlides(slideIndex);
 
+    function plusSlides(n) {
+    showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+    showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1} 
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"; 
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block"; 
+    dots[slideIndex-1].className += " active";
+    }
+</script>
 
 </body>
 </html>
