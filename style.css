@@ -99,6 +99,8 @@ canvas {
     margin-right: auto;
     display: block;
     width: 800px;
+    margin-top: 100px;
     border: double;
+    background-color: #FFF;
     
 }
