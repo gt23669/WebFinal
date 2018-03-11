@@ -1,3 +1,6 @@
+body{
+    /* position: fixed; */
+}
 li{
     list-style-type: none;
     padding: 10px;
@@ -76,3 +79,10 @@ th,td{
 tr:hover { background: yellow; }
 span {line-height: 20px; font-size: 14px; display: block; height: 20px;}
 span:hover {font-size: 20px;}
+
+#logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
