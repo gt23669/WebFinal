@@ -1,5 +1,16 @@
-// var fourBig;
-// $(document).ready(function(){
-    
-  
-// });
+var c = document.getElementById("canvas");
+        var ctx = c.getContext("2d");
+        ctx.beginPath();
+        ctx.moveTo(0,0 );
+        ctx.lineTo(0, 300);
+        ctx.lineTo(800, 300);
+        ctx.lineTo(800, 0);
+        ctx.lineTo(0, 0);
+        ctx.moveTo(50,300);
+        ctx.lineTo(50,50);
+        ctx.lineTo(80,50);
+        ctx.lineTo(80,300);
+                    // ctx.lineTo(600, 50);
+                    // ctx.lineTo(700, 10);
+                    // ctx.lineTo(800, 300);
+                    ctx.stroke();
