@@ -4,100 +4,45 @@
   
     <title>Home</title>
     <link href="style.css" rel="stylesheet"/> 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="./javaScript/script.js"></script>
+    
 </head>
 <body>
-        <div class="float-left-area">
-                <div class="inner-left">
-                
-                        <ul class="link_list">
-                                <a href="index.html">
-                                  <li>Home</li>
-                                </a>
-                                <a href="about us.html">
-                                  <li>About us</li>
-                                </a>
-                                <a href="contact us.html">
-                                  <li>Contact us</li>
-                                </a>
-                                <a href="product specs.html" >
-                                  <li>Specs</li>
-                                </a>
-                              </ul>
-                
-                            </div>
-                          </div>
-                          <div class="float-right-area">
-                            <div class="inner-right">
-                              <p id="Welcome">
-                                Welcome to <i>Umbrella Corp</i>! 
-                              </p>
-                              <p id="reality">
-                                Just yanking your chain there we're actually an LLC called <b>ZomVax</b>
-                              </p>
-                              <img src="./Pictures/LogoComplete(3).png" id="logo">
-                        <div class="slideshow-container">
-                          <div class="mySlides fade">
-                            <!-- Put Images Here!-->
-                            <img src="raccooncity1.jpg" style="width:100%">
-                          </div>
-                        
-                          <div class="mySlides fade">
-                            <!-- Put Images Here!-->
-                            <img src="raccooncity2.jpg" style="width:100%">
-                          </div>
-                        
-                          <div class="mySlides fade">
-                            <!-- Put Images Here!-->
-                            <img src="raccooncity3.jpg" style="width:100%">
-                          </div>
-                        
-                          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                          <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                        </div>
-                        <br>
-                        
-                        <div style="text-align:center">
-                        <div onload="currentSlide(1)"></div>
-                          <span class="dot" onclick="currentSlide(1)"></span> 
-                          <span class="dot" onclick="currentSlide(2)"></span> 
-                          <span class="dot" onclick="currentSlide(3)"></span> 
-                        </div>
-                              </div>
-                        </div>
-                        </div>
+    <div class="float-left-area">
+        <div class="inner-left">
+            
+            <ul class="link_list">
+                <a href="index.html">
+                    <li>Home</li>
+                </a>
+                <a href="about us.html">
+                    <li>About us</li>
+                </a>
+                <a href="contact us.html">
+                    <li>Contact us</li>
+                </a>
+                <a href="product specs.html" >
+                    <li>Specs</li>
+                </a>
+            </ul>
+            
+        </div>
+    </div>
+    <div class="float-right-area">
+        <div class="inner-right">
+            <p id="Welcome">
+                Welcome to <i>Umbrella Corp</i>! 
+            </p>
+            <p id="reality">
+                Just yanking your chain there we're actually an LLC called <b>ZomVax</b>
+            </p>
+            <img src="./Pictures/LogoComplete(3).png" id="logo">
+            <div class="slideshow-container">
+                <div id="slideshow">
+                    <img src="./Pictures/raccooncity3.jpg">
+                    <script src="./javaScript/indexSlideShow.js"></script>
+                </div>
                         
                         <div class="clear-floated"></div>
         
-<script>
-  var slideIndex = 1;
-    showSlides(slideIndex);
-
-    function plusSlides(n) {
-    showSlides(slideIndex += n);
-    }
-
-    function currentSlide(n) {
-    showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    if (n > slides.length) {slideIndex = 1} 
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none"; 
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block"; 
-    dots[slideIndex-1].className += " active";
-    }
-</script>
-
 </body>
 </html>
