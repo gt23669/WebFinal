@@ -166,8 +166,6 @@ width: 700px;
 
 #logo{
     display: block;
-     /* margin-left: auto;
-    margin-right: auto;  */
     width: 10%;
 }
 #logo.sidelogo{
@@ -186,23 +184,48 @@ canvas {
     margin-right: auto;
     display: block;
     width: 800px;
-    margin-top: 100px;
+    margin-top: 50px;
     border: double;
     background-color: #FFF;
     
 }
-/* .slideshow{
-    margin: 100%;
-    position: absolute;
-
-} */
 
 .slideshowimages{
-    margin-top: 10%;
-    margin-left: 24%;
+    margin: 0 23%;
 }
 #logoContainer{
     width: 190px;
     position: relative;
 }
 
+.aboutUsP1 {
+    padding: 0px 40px;
+    color: #fff;
+}
+
+#h1 {
+   font-size: 40px;
+   
+}
+
+#h2 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 30px;
+}
+p.indexP{
+    color: #BD4F95;
+    text-align: center;
+}
+spanner{
+    color: #000;
+    background-color: black;
+    white-space:nowrap;
+    -moz-transform: rotate(.8deg) skewx(-12deg);
+    -moz-box-shadow:3px 0 2px #444;
+    /* border:1px dotted #555; */
+    /* background: -moz-linear-gradient(180deg, #000, #222); */
+
+}

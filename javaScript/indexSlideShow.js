@@ -3,8 +3,7 @@ var slideContainer = document.getElementById("slideshow");
 var imageIndex = 0;
 
 function changeImage() {
-    document.getElementById("slideshow").innerHTML = "<img class='slideshowimages' src="+slideArr[imageIndex]+ " />"; 
-    // https://stackoverflow.com/questions/462741/space-before-closing-slash
+    document.getElementById("slideshow").innerHTML = "<img class='slideshowimages' src=" + slideArr[imageIndex] + " />"; 
     imageIndex++;
     if (imageIndex >= slideArr.length) {
         imageIndex = 0;
